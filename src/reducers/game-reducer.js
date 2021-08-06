@@ -1,4 +1,4 @@
-import { MOVE_DOWN, MOVE_LEFT, MOVE_RIGHT, PAUSE, RESTART, RESUME, ROTATE } from "../actions";
+import { MOVE_DOWN, MOVE_LEFT, MOVE_RIGHT, PAUSE, RESTART, RESUME, ROTATE, GAME_OVER } from "../actions";
 
 
 
