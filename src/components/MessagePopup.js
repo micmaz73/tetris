@@ -5,7 +5,7 @@ import { useSelector } from "react-redux"
 export default function MessagePopup(props){
     const game = useSelector((state) => state.game)
     const {isRunning, gameOver} = game
-    const classNam = isRunning === true ? 'message-popup hidden' : 'message-popup'
+    const classNam = isRunning && !gameOver ? 'message-popup hidden' : 'message-popup'
     let message =''
 
     if (gameOver){message = 'GameOver'}
