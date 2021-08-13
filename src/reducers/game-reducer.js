@@ -38,7 +38,6 @@ const gameReducer = (state = defaultState(), action) => {
                 return {...state, gameOver: true}
             }
 
-
             // reset some things to start a new shape/block
             const newState = defaultState()
             newState.grid = newGrid
@@ -57,7 +56,7 @@ const gameReducer = (state = defaultState(), action) => {
         case GAME_OVER:
             return state
         case RESTART:
-            return state
+            return defaultState()
 
         default:
             return state
